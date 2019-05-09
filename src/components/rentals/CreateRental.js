@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { createRental } from '../store/actions/rentalActions'
 
 class CreateRental extends Component {
 
     state = {
-        address: null,
-        contact: null,
-        move_in: null
+        address: '',
+        contact: '',
+        move_in: ''
     }
 
     handleChange = (e) => {
@@ -16,7 +18,10 @@ class CreateRental extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        this.props.createRental(this.state);
+
+        // redirect to dashboard
+        this.props.history.push('/');
     }
 
     render() {
@@ -42,4 +47,14 @@ class CreateRental extends Component {
     }
 }
 
-export default CreateRental
+const mapStateToProps = (state) => {
+    // attach auth status to props (not yet)
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        createRental: (rental) => dispatch(createRental(rental))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(CreateRental)

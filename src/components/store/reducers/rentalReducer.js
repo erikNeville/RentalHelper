@@ -10,10 +10,10 @@ const initState = {
 const rentalReducer = (state = initState, action) => {
     switch (action.type) {
         case 'CREATE_RENTAL':
-            console.log('created rental', action.rental)
+            //console.log('created rental', action.rental)
             return state;
         case 'CREATE_RENTAL_ERROR':
-            console.log('error creating rental', action.err)
+            //console.log('error creating rental', action.err)
             return state;
         default:
             return state;

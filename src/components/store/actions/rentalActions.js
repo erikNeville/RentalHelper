@@ -11,9 +11,9 @@ export const createRental = (rental) => {
 
         firestore.collection('rentals').add({
             ...rental,
-            authorFirstName: profile.firstName,
-            authorLastName: profile.lastName,
-            authorId: authorId,
+            authorFirstName: 'Erik',
+            authorLastName: 'Neville',
+            authorId: 1234,
             createdAt: new Date()
         }).then(() => {
             dispatch({
