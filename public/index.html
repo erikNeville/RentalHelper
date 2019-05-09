@@ -19,6 +19,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <title>React App</title>
   </head>
   <body>
@@ -34,5 +36,26 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyC7n8YdB8pZ0o3-TpcxFggWjwBgSNg4-6I",
+      authDomain: "rentalhelper-3ef6e.firebaseapp.com",
+      databaseURL: "https://rentalhelper-3ef6e.firebaseio.com",
+      projectId: "rentalhelper-3ef6e",
+      storageBucket: "rentalhelper-3ef6e.appspot.com",
+      messagingSenderId: "528329233309",
+      appId: "1:528329233309:web:a065b3fcab6e8481"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
   </body>
 </html>
