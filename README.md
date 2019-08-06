@@ -1,3 +1,10 @@
+This is an application intended to assist persons seeking to rent a house or apartment. It is meant to keep a record
+of all places applied to and the information related to them (address, contact email, etc...). It is also meant to
+allow the user to create a rating criteria to keep track of the desirability of each location.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
